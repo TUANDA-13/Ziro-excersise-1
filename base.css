@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 42px;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --main-color: #5F4BDB;
+    --text-color: #363848;
+    --background-color: #F8F9FD;
+    --second-color: #F0EEFF;
+    --third-color: #B2C3FF;
+    --default-color: #C4C4C4;
+    --light-violet: #D7D0FB;
+    --green-color: #30C736;
+    --orange-color:#FE8D4D;
+}
+
+.container {
+    /* margin: 0 150px; */
+    width: 1620px;
+    margin: auto;
+}
+
+.btn {
+    padding: 17px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    outline-style: none;
+    border: none;
+    border-radius: 30px;
+    height: 60px;
+}
