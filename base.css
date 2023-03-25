@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +59,7 @@ p {
     --default-color: #C4C4C4;
     --light-violet: #D7D0FB;
     --green-color: #30C736;
-    --orange-color:#FE8D4D;
+    --orange-color: #FE8D4D;
 }
 
 .container {
