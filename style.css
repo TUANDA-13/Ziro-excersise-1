@@ -1,3 +1,5 @@
+@import "feature-profile.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -147,7 +149,7 @@ header {
     height: 813px;
 }
 
-.content {
+.main-banner .content {
     display: flex;
     flex-direction: row;
 }
@@ -363,8 +365,6 @@ header {
     margin-bottom: 62px;
 
 }
-
-.steps-cover {}
 
 .step-card {
     min-height: 120px;
