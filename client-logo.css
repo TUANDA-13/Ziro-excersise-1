@@ -1,0 +1,10 @@
+.brand-logo {
+    margin: 128px 0px 96px;
+}
+
+.brand-logo .client-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 156px;
+}

@@ -1,5 +1,7 @@
 @import "base.css";
 @import "feature-profile.css";
+@import "client-logo.css";
+@import "testimonials.css";
 
 header {
     background-color: var(--background-color);
