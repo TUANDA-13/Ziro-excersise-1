@@ -2,6 +2,7 @@
 @import "feature-profile.css";
 @import "client-logo.css";
 @import "testimonials.css";
+@import "counter.css";
 
 header {
     background-color: var(--background-color);

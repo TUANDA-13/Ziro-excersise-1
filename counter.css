@@ -1,0 +1,79 @@
+.counter{
+    margin-bottom: 150px;
+}
+.counter .counter-content {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 85px 0px 96px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.counter .counter-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+.counter .counter-content div h1 {
+    color: white;
+    line-height: 90px;
+}
+
+.counter .counter-content div h5 {
+    color: white;
+    margin-top: 19px;
+}
+
+.counter .circle-1, .counter .circle-2, .counter .circle-3, .counter .circle-4, .counter .circle-5, .counter .circle-6 {
+    position: absolute;
+}
+
+.counter .circle-1 {
+    width: 286px;
+    height: 286px;
+    border-radius: 143px;
+    background-color: rgba(82, 65, 187, 0.33);
+    top: -143px;
+    left: -143px;
+}
+
+.counter .circle-2 {
+    background-color: rgba(107, 88, 224, 1);
+    width: 62px;
+    height: 62px;
+    border-radius: 31px;
+    top: 68px;
+    left: 129px;
+}
+
+.counter .circle-3 {
+    background-color: rgba(82, 65, 187, 1);
+    width: 329px;
+    height: 329px;
+    border-radius: 165px;
+    top: 245px;
+    left: 231px;
+}
+
+.counter .circle-4 {
+    top: 257px;
+    left: 492px;
+}
+
+.counter .circle-5 {
+    background-color: rgba(107, 88, 224, 1);
+    width: 271px;
+    height: 271px;
+    border-radius: 136px;
+    top: -135px;
+    right: 10px;
+}
+
+.counter .circle-6 {
+    top: 194px;
+    right: 36px;
+}
