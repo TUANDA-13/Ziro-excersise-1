@@ -61,6 +61,7 @@ p {
     --green-color: #30C736;
     --orange-color: #FE8D4D;
     --btn-more: #F7F5FF;
+    --background-black: #1F2131;
 }
 
 .container {
@@ -78,4 +79,5 @@ p {
     border: none;
     border-radius: 30px;
     height: 60px;
+    cursor: pointer;
 }

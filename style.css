@@ -4,6 +4,7 @@
 @import "testimonials.css";
 @import "counter.css";
 @import "pricing-plan.css";
+@import "new-letter-signup.css";
 
 header {
     background-color: var(--background-color);
