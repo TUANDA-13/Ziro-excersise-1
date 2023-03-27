@@ -10,6 +10,15 @@ header {
     height: 130px;
 }
 
+.header .logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo i {
+    display: none;
+}
+
 .menu {
     width: 485px;
     display: flex;
@@ -58,4 +67,81 @@ header {
     background-color: var(--main-color);
     color: white;
     padding: 17px 50px;
+}
+
+@media only screen and (min-width: 1400px) and (max-width:1920px) {
+    .menu {
+        width: 400px;
+    }
+
+    .main-banner .big-circle {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        background-color: var(--background-color);
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 0px 29px #3E357824;
+        top: 0px;
+    }
+
+    .header {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        z-index: 1;
+        display: flex;
+        background-color: var(--background-color);
+        height: 130px;
+    }
+
+
+    .header .logo {
+        width: 100%;
+        align-items: center;
+        margin-top: 37px;
+    }
+
+    .header .logo i {
+        display: block;
+        font-size: 30px;
+        color: var(--main-color);
+        cursor: pointer;
+    }
+
+    .menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu .menu-item {
+        padding: 15px 10px;
+    }
+
+    .header .search-login-sigup {
+        margin-top: 20px;
+        z-index: 100000;
+        display: none;
+    }
+
+    .header-active {
+        height: 426px;
+    }
+
+    .header-active .header {
+        flex-direction: column;
+    }
+
+    .header-active .header .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-active .header .search-login-sigup {
+        display: flex;
+    }
 }

@@ -202,3 +202,24 @@
     top: 100px;
     right: -150px;
 }
+
+@media screen and (max-width: 1400px) {
+    .main-banner .content {
+        margin-top: 130px;
+    }
+
+    .main-banner .content .right-side{
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 1919px) {
+    .main-banner .big-circle {
+        margin-left: 0px;
+        left: -54px;
+    }
+
+    .main-banner .bars-chart {
+        right: -50px;
+    }
+}

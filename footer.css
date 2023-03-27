@@ -58,6 +58,7 @@
 .footer ul li {
     margin-bottom: 20px;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .footer ul li, .col-5 i, .col-5 p {

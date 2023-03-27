@@ -9,6 +9,7 @@
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .counter .counter-content div {
