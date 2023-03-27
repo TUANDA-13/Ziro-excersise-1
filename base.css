@@ -11,10 +11,11 @@
     font-family: Propins, Helvetica, sans-serif;
     color: var(--text-color);
     transition: all .4s ease;
+    font-size: 16px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 80px;
     font-weight: 600;
 }
@@ -22,28 +23,27 @@ h1 {
 h2 {
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 3.125rem;
     line-height: 75px;
 }
 
 h3 {
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 48px;
 }
 
 h4 {
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 32px;
 }
 
 h5 {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     line-height: 42px;
 }
 
@@ -73,7 +73,7 @@ p {
 
 .btn {
     padding: 17px;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 27px;
     font-weight: 600;
     outline-style: none;
@@ -83,36 +83,6 @@ p {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 576px) {
-    .container {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 767px) and (min-width:576px) {
-    .container {
-        width: 540px;
-    }
-}
-
-@media only screen and (max-width: 991px) and (min-width:768px) {
-    .container {
-        width: 720px;
-    }
-}
-
-
-@media only screen and (max-width: 1199px) and (min-width:992px) {
-    .container {
-        width: 960px;
-    }
-}
-
-@media only screen and (max-width: 1399px) and (min-width:1200px) {
-    .container {
-        width: 1140px;
-    }
-}
 
 @media only screen and (min-width:1400px) {
     .container {
@@ -123,5 +93,46 @@ p {
 @media only screen and (min-width:1920px) {
     .container {
         width: 1620px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1399px) {
+    html {
+        /* font-size: 14px; */
+    }
+
+    .container {
+        width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+
+    html{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 100%;
     }
 }

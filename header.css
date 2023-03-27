@@ -34,7 +34,7 @@ header {
 
 .menu a {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 27px;
 }
 
@@ -55,7 +55,7 @@ header {
     border-radius: 30px;
     border: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .btn-login {
@@ -107,7 +107,7 @@ header {
 
     .header .logo i {
         display: block;
-        font-size: 30px;
+        font-size: 1.875rem;
         color: var(--main-color);
         cursor: pointer;
     }

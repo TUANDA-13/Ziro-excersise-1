@@ -7,4 +7,31 @@
     justify-content: space-between;
     align-items: center;
     margin: 0px 156px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:1400px) {
+    .brand-logo .client-logo {
+        justify-content: center;
+    }
+
+    .brand-logo .client-logo img {
+        margin: 10px 40px 10px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .brand-logo {
+        margin: 80px 0px 66px;
+    }
+
+    .brand-logo .client-logo img {
+        margin: 20px 60px 20px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .brand-logo .client-logo img {
+        margin: 30px 60px 30px;
+    }
 }

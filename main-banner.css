@@ -1,6 +1,7 @@
 .main-banner {
     background-color: var(--background-color);
-    height: 813px;
+    /* height: 813px; */
+    width: 100%;
 }
 
 .main-banner .content {
@@ -46,6 +47,7 @@
 
 .text-main-color {
     color: var(--main-color);
+    font-size: 3.75rem;
 }
 
 .main-banner .description {
@@ -87,7 +89,7 @@
 .main-banner .watch-demo-text {
     margin-left: 14px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 27px;
 }
 
@@ -204,12 +206,21 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .main-banner .content {
-        margin-top: 130px;
+    .main-banner .information {
+        width: 700px;
     }
 
-    .main-banner .content .right-side{
+    .main-banner .content {
+        margin-top: 130px;
+        flex-wrap: wrap;
+        /* height: auto; */
+        justify-content: center;
+    }
+
+    .main-banner .content .right-side {
         transform: scale(0.8);
+        margin-top: -30px;
+        padding-left: 100px;
     }
 }
 
