@@ -15,6 +15,10 @@ header {
     justify-content: space-between;
 }
 
+.header .logo .search-login-sigup-tablet {
+    display: none;
+}
+
 .header .logo i {
     display: none;
 }
@@ -48,7 +52,7 @@ header {
     right: 28px;
 }
 
-#search-input {
+#search-input, #search-input-tablet {
     width: 385px;
     height: 60px;
     padding: 16px 30px;
@@ -69,7 +73,11 @@ header {
     padding: 17px 50px;
 }
 
-@media only screen and (min-width: 1400px) and (max-width:1920px) {
+.btn-signup i {
+    color: white;
+}
+
+@media only screen and (max-width:1920px) {
     .menu {
         width: 400px;
     }
@@ -114,7 +122,9 @@ header {
 
     .menu {
         flex-direction: column;
+        height: 0px;
         display: none;
+        transition: height 1s ease;
     }
 
     .menu .menu-item {
@@ -127,21 +137,62 @@ header {
         display: none;
     }
 
-    .header-active {
-        height: 426px;
-    }
 
     .header-active .header {
         flex-direction: column;
+        height: 340px;
+        transition: height .1 ease;
     }
 
     .header-active .header .menu {
-        display: flex;
         flex-direction: column;
         width: 100%;
+        height: auto;
+        display: flex;
+        overflow: hidden;
     }
 
-    .header-active .header .search-login-sigup {
+    .header .logo .search-login-sigup-tablet {
         display: flex;
+        align-items: center;
+        width: 500px;
+        justify-content: space-between;
+    }
+
+    .header .logo .search-login-sigup-tablet #search-input-tablet {
+        width: 60px;
+        border: 1px solid var(--default-color);
+        margin-left: 150px;
+    }
+
+    .header .logo .search-login-sigup-tablet .search-btn {
+        right: 20px;
+    }
+
+    .header .logo .btn-login, .header .logo .btn-signup {
+        padding: 17px 17px;
+    }
+
+
+    /* action */
+    .header .logo .search-active #search-input-tablet {
+        width: 270px;
+    }
+
+    .header .logo .search-active .btn-login, .header .logo .search-active .btn-signup {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header .logo .search-login-sigup-tablet #search-input-tablet {
+        margin-left: 0px;
+    }
+
+    .header .logo .search-login-sigup-tablet {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        justify-content: space-between;
     }
 }

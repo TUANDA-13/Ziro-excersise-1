@@ -31,6 +31,8 @@
     display: flex;
     flex-direction: row;
     flex-basis: 0;
+    position: relative;
+    transition: all .5s ease;
 }
 
 .personal-profile-card {
@@ -147,4 +149,12 @@
         width: 400px;
         margin-right: 60px;
     }
+}
+
+@media only screen and (max-width:768px) {
+    .featured-profile .btn-right, .featured-profile .btn-left {
+        display: none;
+    }
+
+
 }

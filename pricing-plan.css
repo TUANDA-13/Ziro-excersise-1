@@ -118,7 +118,23 @@
 }
 
 @media only screen and (max-width:992px) {
-    .pricing-plan-content .description{
+    .pricing-plan-content .description {
         width: 500px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .pricing-plan-content .cards .card {
+        width: 320px;
+    }
+
+    .pricing-plan-content .btn-more {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .pricing-plan-content .description{
+        width: auto;
     }
 }
