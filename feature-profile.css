@@ -44,9 +44,12 @@
     border-radius: 18px;
 }
 
-.personal-profile-card:hover {
-    /* transform: scale(1.1); */
-    box-shadow: 0px 2px 28px 0px #3E35782A;
+.personal-profile-card:hover .btn-rating {
+
+    border: 1px solid var(--orange-color);
+    background-color: white;
+    color: var(--orange-color);
+
 }
 
 .personal-profile-card .information, .personal-profile-rating {
@@ -62,6 +65,7 @@
     margin-top: 29px;
     margin-right: 40px;
     justify-content: space-between;
+    height: 46px;
 }
 
 .personal-profile-rating img {
@@ -144,6 +148,10 @@
     top: 180px;
 }
 
+.featured-profile .btn-right:hover, .featured-profile .btn-left:hover {
+    transform: scale(1.1);
+}
+
 @media only screen and (max-width:1920px) {
     .personal-profile-card {
         width: 400px;
@@ -156,5 +164,19 @@
         display: none;
     }
 
+    .personal-profile-container {
+        overflow-x: scroll;
+    }
 
+    .personal-profile-container::-webkit-scrollbar {
+        /* height: 2px;
+        width: 100%; */
+        width: 5px;
+        height: 4px;
+        /* or add it to the track */
+    }
+
+    .personal-profile-container::-webkit-scrollbar-thumb {
+        background: var(--orange-color);
+    }
 }

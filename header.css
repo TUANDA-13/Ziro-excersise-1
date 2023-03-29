@@ -196,3 +196,13 @@ header {
         justify-content: space-between;
     }
 }
+
+@media only screen and (max-width:576px) {
+    .header .logo .search-active #search-input-tablet {
+        width: 200px;
+    }
+
+    .header .logo .search-login-sigup-tablet{
+        width: 250px;
+    }
+}

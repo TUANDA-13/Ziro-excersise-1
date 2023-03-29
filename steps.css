@@ -80,6 +80,11 @@
     right: 4px;
 }
 
+.step-card .card-content .open-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 #step-1 .number {
     background-color: #F6EBFF;
     color: #8E22E2;
@@ -193,7 +198,7 @@
         display: none;
     }
 
-    .step-card .card-content .title{
+    .step-card .card-content .title {
         font-size: 1.5rem;
     }
 }

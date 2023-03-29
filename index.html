@@ -301,6 +301,81 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="personal-profile-card">
+                            <div class="information">
+                                <div class="personal-profile-avatar">
+                                    <img src="" alt="">
+                                    <div class="personal-profile-status"></div>
+                                </div>
+                                <div>
+                                    <div class="personal-profile-name">David Hutapea</div>
+                                    <div class="personal-profile-position">UI/UX designer</div>
+                                </div>
+                            </div>
+                            <div class="personal-profile-rating">
+                                <div>
+                                    <img src="src/image/star.png" alt="" class="">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/start-not-light.png" alt="" class="star">
+                                    <span class="value">4.3</span>
+                                </div>
+                                <div class="rating">
+                                    <button class="btn btn-rating">$84/hr</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-profile-card">
+                            <div class="information">
+                                <div class="personal-profile-avatar">
+                                    <img src="" alt="">
+                                    <div class="personal-profile-status"></div>
+                                </div>
+                                <div>
+                                    <div class="personal-profile-name">David Hutapea</div>
+                                    <div class="personal-profile-position">UI/UX designer</div>
+                                </div>
+                            </div>
+                            <div class="personal-profile-rating">
+                                <div>
+                                    <img src="src/image/star.png" alt="" class="">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/start-not-light.png" alt="" class="star">
+                                    <span class="value">4.3</span>
+                                </div>
+                                <div class="rating">
+                                    <button class="btn btn-rating">$84/hr</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-profile-card">
+                            <div class="information">
+                                <div class="personal-profile-avatar">
+                                    <img src="" alt="">
+                                    <div class="personal-profile-status"></div>
+                                </div>
+                                <div>
+                                    <div class="personal-profile-name">David Hutapea</div>
+                                    <div class="personal-profile-position">UI/UX designer</div>
+                                </div>
+                            </div>
+                            <div class="personal-profile-rating">
+                                <div>
+                                    <img src="src/image/star.png" alt="" class="">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/star.png" alt="" class="star">
+                                    <img src="src/image/start-not-light.png" alt="" class="star">
+                                    <span class="value">4.3</span>
+                                </div>
+                                <div class="rating">
+                                    <button class="btn btn-rating">$84/hr</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="btn btn-left" id="feature-profile-btn-left">
@@ -494,7 +569,12 @@
                 </div>
                 <div class="input-subscribe">
                     <input type="text" placeholder="Enter your email address">
-                    <div class="btn btn-subscribe">Subscribe</div>
+                    <div class="btn btn-subscribe">
+                        <p>
+                            Subscribe
+                        </p>
+                        <i class="fa-regular fa-handshake"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -590,11 +670,13 @@
             }
         });
 
-        function caculatorPosition(index,width,margin){
-            if(index<=-1){
-                return index*(width+margin);
+        function caculatorPosition(index, width, marginAndPadding) {
+            if (index <= -1)
+            {
+                return index * (width + +marginAndPadding);
             }
-            else{
+            else
+            {
                 return 0;
             }
         }
@@ -618,24 +700,36 @@
                     const childCards = cards.find('.personal-profile-card');
                     const numberOfCard = cards.find('.personal-profile-card').length;
                     const width = childCards.first().width();
-                    const margin = childCards.first().css('marginRight');
-                    cards.css({
-                        'left': caculatorPosition(--index,width,margin) +'px'
-                    })
-                    
-                    alert($(".personal-profile-cards").position().left)
+                    let marginRight = childCards.first().css('marginRight')
+                    let paddingLeft = childCards.first().css('paddingLeft');
+                    marginRight = marginRight.substring(0, marginRight.length - 2);
+                    paddingLeft = paddingLeft.substring(0, paddingLeft.length - 2);
+                    if (index != 0)
+                    {
+                        let left = caculatorPosition(++index, width, +marginRight + +paddingLeft) + 'px';
+                        cards.css({
+                            'left': left
+                        })
+                    }
                 }
             })
             $("#feature-profile-btn-right").on({
                 click: () => {
                     const cards = $(".personal-profile-cards");
-                    cards.css({
-                        'left': caculatorPosition(++index) + 'px'
-                    })
                     const childCards = cards.find('.personal-profile-card');
                     const numberOfCard = cards.find('.personal-profile-card').length;
-                    alert(cards.find('.personal-profile-card')[0].css('right'))
-                    console.log(numberOfCard)
+                    const width = childCards.first().width();
+                    let marginRight = childCards.first().css('marginRight')
+                    let paddingLeft = childCards.first().css('paddingLeft');
+                    marginRight = marginRight.substring(0, marginRight.length - 2);
+                    paddingLeft = paddingLeft.substring(0, paddingLeft.length - 2);
+                    if (index - 1 != -childCards.length)
+                    {
+                        let left = caculatorPosition(--index, width, +marginRight + +paddingLeft) + 'px';
+                        cards.css({
+                            'left': left
+                        })
+                    }
                 }
             })
         });
