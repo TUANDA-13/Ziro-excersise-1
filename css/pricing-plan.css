@@ -7,14 +7,14 @@
 
 .pricing-plan-content .title {
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 60px;
 }
 
 .pricing-plan-content .description {
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.6);
@@ -54,7 +54,7 @@
 
 .pricing-plan-content .card .card-name {
     font-family: Open Sans;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
@@ -63,14 +63,14 @@
 
 .pricing-plan-content .card h5 {
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 1.127rem;
     font-weight: 400;
     line-height: 26px;
 }
 
 .pricing-plan-content .card .fee {
     font-family: Poppins;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 600;
     line-height: 60px;
     margin-top: 53px;
@@ -87,7 +87,7 @@
 
 .pricing-plan-content .card .card-description h5 {
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 42px;
 }
@@ -103,4 +103,38 @@
     margin-top: 53px;
     background-color: var(--btn-more);
     color: var(--main-color);
+}
+
+@media only screen and (max-width:1400px) {
+    .pricing-plan-content .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pricing-plan-content .cards .card:last-of-type {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .pricing-plan-content .description {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .pricing-plan-content .cards .card {
+        width: 320px;
+    }
+
+    .pricing-plan-content .btn-more {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .pricing-plan-content .description{
+        width: auto;
+    }
 }

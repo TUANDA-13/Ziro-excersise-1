@@ -1,0 +1,148 @@
+.newsletter-signup {
+    margin-top: 230px;
+    background-color: var(--background-black);
+}
+
+.newsletter-signup .content {
+    height: 366px;
+    padding: 107px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter-signup .content .discription {
+    font-family: Poppins;
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 76px;
+    width: 789px;
+    color: white;
+}
+
+.newsletter-signup .input-subscribe {
+    position: relative;
+    width: 546px;
+}
+
+.newsletter-signup .input-subscribe input {
+    height: 80px;
+    width: 546px;
+    left: 331px;
+    border-radius: 60px;
+    background-color: transparent;
+    outline: none;
+    padding: 28px 78px 28px 37px;
+    font-family: Open Sans;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 25px;
+    color: white;
+    border: 1px solid #363843;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-signup .input-subscribe .btn-subscribe {
+    height: 60px;
+    width: 196px;
+    left: 670px;
+    top: 1511px;
+    border-radius: 37px;
+    background-color: var(--orange-color);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 340px;
+    top: 10px;
+}
+
+.newsletter-signup .input-subscribe .btn-subscribe:hover {
+    border: 1px solid var(--orange-color);
+    background-color: white;
+}
+
+.newsletter-signup .input-subscribe .btn-subscribe:hover p {
+    color: var(--orange-color);
+    font-size: 1.1rem;
+}
+
+.newsletter-signup .input-subscribe .btn-subscribe p {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.newsletter-signup .input-subscribe .btn-subscribe i {
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+
+    /* .newsletter-signup .input-subscribe, */
+    .newsletter-signup .input-subscribe input {
+        width: 500px;
+    }
+
+    .newsletter-signup .input-subscribe .btn-subscribe {
+        left: 292px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .newsletter-signup .content .discription {
+        text-align: center;
+        width: 100%;
+    }
+
+    .newsletter-signup .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .newsletter-signup .input-subscribe {
+        margin: 30px 0px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .copy-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .newsletter-signup .input-subscribe {
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .newsletter-signup .input-subscribe input {
+        width: 100%;
+    }
+
+    .newsletter-signup .input-subscribe .btn-subscribe {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        right: 12px;
+    }
+
+    .newsletter-signup .input-subscribe .btn-subscribe i {
+        display: block;
+        color: white;
+    }
+
+    .newsletter-signup .input-subscribe .btn-subscribe:hover i{
+        color: var(--orange-color);
+    }
+
+    .newsletter-signup .input-subscribe p {
+        display: none;
+    }
+}

@@ -1,6 +1,7 @@
-.counter{
+.counter {
     margin-bottom: 150px;
 }
+
 .counter .counter-content {
     background-color: var(--main-color);
     display: flex;
@@ -9,6 +10,7 @@
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .counter .counter-content div {
@@ -76,4 +78,15 @@
 .counter .circle-6 {
     top: 194px;
     right: 36px;
+}
+
+@media only screen and (max-width:992px) {
+    .counter .counter-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .counter .counter-content .circle-4 {
+        display: none;
+    }
 }

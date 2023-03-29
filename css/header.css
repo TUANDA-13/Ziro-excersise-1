@@ -1,0 +1,208 @@
+header {
+    background-color: var(--background-color);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo .search-login-sigup-tablet {
+    display: none;
+}
+
+.header .logo i {
+    display: none;
+}
+
+.menu {
+    width: 485px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.search-login-sigup {
+    display: flex;
+    justify-content: space-between;
+    width: 734px;
+}
+
+.menu a {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 27px;
+}
+
+.search {
+    position: relative;
+}
+
+.search-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 28px;
+}
+
+#search-input, #search-input-tablet {
+    width: 385px;
+    height: 60px;
+    padding: 16px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.btn-login {
+    background-color: var(--second-color);
+    padding: 17px 30px;
+}
+
+.btn-signup {
+    background-color: var(--main-color);
+    color: white;
+    padding: 17px 50px;
+}
+
+.btn-signup i {
+    color: white;
+}
+
+@media only screen and (max-width:1920px) {
+    .menu {
+        width: 400px;
+    }
+
+    .main-banner .big-circle {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        background-color: var(--background-color);
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 0px 29px #3E357824;
+        top: 0px;
+    }
+
+    .header {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        z-index: 1;
+        display: flex;
+        background-color: var(--background-color);
+        height: 130px;
+    }
+
+
+    .header .logo {
+        width: 100%;
+        align-items: center;
+        margin-top: 37px;
+    }
+
+    .header .logo i {
+        display: block;
+        font-size: 1.875rem;
+        color: var(--main-color);
+        cursor: pointer;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: 0px;
+        display: none;
+        transition: height 1s ease;
+    }
+
+    .menu .menu-item {
+        padding: 15px 10px;
+    }
+
+    .header .search-login-sigup {
+        margin-top: 20px;
+        z-index: 100000;
+        display: none;
+    }
+
+
+    .header-active .header {
+        flex-direction: column;
+        height: 340px;
+        transition: height .1 ease;
+    }
+
+    .header-active .header .menu {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .header .logo .search-login-sigup-tablet {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        justify-content: space-between;
+    }
+
+    .header .logo .search-login-sigup-tablet #search-input-tablet {
+        width: 60px;
+        border: 1px solid var(--default-color);
+        margin-left: 150px;
+    }
+
+    .header .logo .search-login-sigup-tablet .search-btn {
+        right: 20px;
+    }
+
+    .header .logo .btn-login, .header .logo .btn-signup {
+        padding: 17px 17px;
+    }
+
+
+    /* action */
+    .header .logo .search-active #search-input-tablet {
+        width: 270px;
+    }
+
+    .header .logo .search-active .btn-login, .header .logo .search-active .btn-signup {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header .logo .search-login-sigup-tablet #search-input-tablet {
+        margin-left: 0px;
+    }
+
+    .header .logo .search-login-sigup-tablet {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .header .logo .search-active #search-input-tablet {
+        width: 200px;
+    }
+
+    .header .logo .search-login-sigup-tablet{
+        width: 250px;
+    }
+}
